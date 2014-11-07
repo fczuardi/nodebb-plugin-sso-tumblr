@@ -1,0 +1,15 @@
+{
+	"id": "nodebb-plugin-sso-tumblr",
+	"name": "NodeBB Tumblr SSO",
+	"description": "NodeBB Plugin that allows users to login/register via their Tumblr account.",
+	"url": "https://github.com/joe1chen/nodebb-plugin-sso-tumblr",
+	"library": "./library.js",
+	"templates": "templates",
+	"hooks": [
+		{ "hook": "static:app.load", "method": "init" },
+		{ "hook": "filter:auth.init", "method": "getStrategy" },
+		{ "hook": "filter:admin.header.build", "method": "addMenuItem" },
+	  	{ "hook": "filter:user.delete", "method": "deleteUserData" }
+	],
+	"minver": "0.5.0"
+}

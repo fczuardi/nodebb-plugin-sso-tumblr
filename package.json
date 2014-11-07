@@ -1,0 +1,32 @@
+{
+  "name": "nodebb-plugin-sso-tumblr",
+  "version": "0.1.0",
+  "description": "NodeBB Tumblr SSO",
+  "main": "library.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joe1chen/nodebb-plugin-sso-tumblr"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "tumblr",
+    "sso",
+    "single sign on",
+    "registration"
+  ],
+  "author": "Joseph Chen <joseph.chen@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joe1chen/nodebb-plugin-sso-tumblr/issues"
+  },
+  "dependencies": {
+    "passport-tumblr": "^0.1.2",
+    "shortid": "^2.1.2"
+  },
+  "homepage": "https://github.com/joe1chen/nodebb-plugin-sso-tumblr",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
