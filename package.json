@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-sso-tumblr",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "NodeBB Tumblr SSO",
   "main": "library.js",
   "repository": {
@@ -23,6 +23,9 @@
   "dependencies": {
     "passport-tumblr": "^0.1.2",
     "shortid": "^2.1.2"
+  },
+  "nbbpm": {
+    "compatibility": "^0.6.0"
   },
   "homepage": "https://github.com/joe1chen/nodebb-plugin-sso-tumblr",
   "devDependencies": {},

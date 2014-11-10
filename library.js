@@ -23,13 +23,13 @@
 
 	var Tumblr = {};
 
-	Tumblr.init = function(app, middleware, controllers, callback) {
+	Tumblr.init = function(params, callback) {
 		function render(req, res, next) {
 			res.render('admin/plugins/sso-tumblr', {});
 		}
 
-		app.get('/admin/plugins/sso-tumblr', middleware.admin.buildHeader, render);
-		app.get('/api/admin/plugins/sso-tumblr', render);
+		params.router.get('/admin/plugins/sso-tumblr', params.middleware.admin.buildHeader, render);
+		params.router.get('/api/admin/plugins/sso-tumblr', render);
 
 		callback();
 	}
